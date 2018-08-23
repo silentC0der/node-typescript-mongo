@@ -1,0 +1,21 @@
+{
+  "name": "node-apis-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts --watch",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mongoose": "^5.2.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}
